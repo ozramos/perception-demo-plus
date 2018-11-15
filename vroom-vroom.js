@@ -1,9 +1,13 @@
-// This is the street view object
-const pano = window.pano
-
 window.initialize = function () {
   const $rawImg = document.querySelector('#image-raw')
+  // Allow us to use Google Street view data, which is considered external
   $rawImg.crossOrigin = ''
+
+  // Semantic
+  const $result = {
+    semantic: document.querySelector('#result'),
+    depthCanvas: document.querySelector('#result-depth')
+  }
   
   /**
    * Setup Google Street View
@@ -29,4 +33,8 @@ window.initialize = function () {
     const pos = pano.getPosition()
     $rawImg.src = `https://maps.googleapis.com/maps/api/streetview?size=400x400&location=${pos.lat()},${pos.lng()}&fov=90&heading=${pov.heading}&pitch=${pov.pitch}&key=AIzaSyCr2mKyJiFfXxLE6MYx6b-svg7oQEfw0u4`
   }
+  
+  /**
+   * DEAL WITH IT 
+   */
 }
