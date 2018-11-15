@@ -1,3 +1,5 @@
+![](https://media.giphy.com/media/MTKNpZlb7rqWFy8ToL/giphy.gif)
+
 # Wayve Perception Demo +
 **Learn more**: [https://wayve.ai/blog/2018/10/8/vision-for-driving-with-deep-learning](https://wayve.ai/blog/2018/10/8/vision-for-driving-with-deep-learning)
 
