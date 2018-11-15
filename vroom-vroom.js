@@ -6,7 +6,7 @@ window.initialize = function () {
   // Semantic
   const $result = {
     semantic: document.querySelector('#result'),
-    depthCanvas: document.querySelector('#result-depth')
+    depth: document.querySelector('#result-depth')
   }
   
   /**
@@ -35,6 +35,15 @@ window.initialize = function () {
   }
   
   /**
-   * DEAL WITH IT 
+   * DEAL WITH IT 👊🏼
+   * - Use the inferred data to give the agent some logic, like "driving" around or storing the data in cloud storage
+   * - See the Google Street View API to learn how to "drive" the car: 
    */
+  const inference = $rawImg.onload
+  $rawImg.onload = function () {
+    console.clear()
+    inference()
+    console.log('Semantic Image:', $result.semantic.getContext('2d').getImageData(0, 0, $result.semantic.width, $result.semantic.height))
+    console.log('Depth:', $result.depth.getContext('2d').getImageData(0, 0, $result.semantic.width, $result.semantic.height))
+  }
 }
