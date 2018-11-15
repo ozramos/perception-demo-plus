@@ -1,37 +1,21 @@
-Welcome to Glitch
-=================
+# Webpack UMD Boilerplate
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+> A webpack boilerplate I use to jumpstart my projects just...like...✨...that!
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+## Features
+- Generates UMD libraries with [imedepotent babel polyfill](https://github.com/codejamninja/idempotent-babel-polyfill)
+- [Pug](https://pugjs.org/api/getting-started.html) for minimal HTML examples
+- [Spectre.css](https://picturepan2.github.io/spectre/) for super lightweight styling
 
-Find out more [about Glitch](https://glitch.com/about).
+## Prereqs
+- [git](https://git-scm.com/downloads)
+- [NodeJS](https://nodejs.org/en/)
+- [yarn](https://yarnpkg.com/lang/en/docs/install/#windows-stable) (replaces npm)
 
-
-Your Project
-------------
-
-### ← README.md
-
-That's this file, where you can tell people what your cool website does and how you built it.
-
-### ← index.html
-
-Where you'll write the content of your website. 
-
-### ← style.css
-
-CSS files add styling rules to your content.
-
-### ← script.js
-
-If you're feeling fancy you can add interactivity to your site with JavaScript.
-
-### ← assets
-
-Drag in `assets`, like images or music, to add them to your project
-
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
+## Scripts
+```bash
+npm init       # To update the package with your own labels
+npm install    # and npm install --only=dev if you have a global NODE_ENV=production, the default on Windows.
+npm run dev    # Development mode with SASS, templates, and hot-reload on localhost:8080
+npm run build  # Build the library
+```
